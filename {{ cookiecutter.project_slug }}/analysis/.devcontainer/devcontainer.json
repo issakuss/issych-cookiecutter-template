@@ -1,0 +1,18 @@
+{
+    "name": "{{ cookiecutter.container_name }}_dev",
+    "service": "{{ cookiecutter.container_name }}_dev",
+    "dockerComposeFile": "docker-compose.yml",
+    "workspaceFolder": "/mnt",
+    "customizations": {
+        "vscode": {
+            "settings": { 
+                "terminal.integrated.defaultProfile.linux#": "/bin/bash",
+                "python.pythonPath": "/usr/bin/python",
+                "python.linting.enabled": true,
+                "python.analysis.typeCheckingMode": "basic",
+                "jupyter.notebookFileRoot": "/mnt"
+            }
+        }
+    },
+    "postCreateCommand": "/bin/bash --login"
+  }

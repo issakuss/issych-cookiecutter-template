@@ -1,0 +1,12 @@
+{
+  "project_slug": "myproject",
+  "issych_di_version": "0.1.0",
+  "image_name": "issakuss/cctest",
+  "container_name": "cctest",
+  "uid": 22398,
+  "gid": 16003,
+  "username": "issakuss",
+  "groupname": "abi",
+  "git_email": "foo@bar.com",
+  "git_user": "foo"
+}

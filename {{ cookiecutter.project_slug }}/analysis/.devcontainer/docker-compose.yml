@@ -1,0 +1,23 @@
+version: '3'
+services:
+  {{ cookiecutter.container_name }}_dev:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        USER_ID: {{ cookiecutter.uid }}
+        GROUP_ID: {{ cookiecutter.gid }}
+        USER_NAME: {{ cookiecutter.username }}
+        GROUP_NAME: {{ cookiecutter.groupname }}
+
+    image: {{ cookiecutter.image_name }}:devcontainer
+    container_name: {{ cookiecutter.container_name }}_dev
+    volumes:
+      - /home/vermeer/issakuss/study12/analysis-b/:/mnt
+      - /home/vermeer/issakuss/study12/rawdata/:/raw:ro
+      - /home/ncd/issakuss/.ssh/:/home/issakuss/.ssh/
+    stdin_open: true
+    tty: true
+    user: "{{ cookiecutter.uid}}:{{ cookiecutter.gid }}"
+    entrypoint: []
+    command: "/bin/bash --login"

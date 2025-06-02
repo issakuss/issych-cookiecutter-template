@@ -1,0 +1,15 @@
+# 略語（または変数名）と正式名の対応関係をこのファイルにまとめます。
+# セクション分け（[variables]など）は自由に行なってください。
+# 以下は例ですので、自由に書き換えてください。
+[variables]
+  sepal_length = 'Sepal length'
+  sepal_width = 'Sepal width'
+  petal_length = 'Petal length'
+  petal_width = 'Petal width'
+
+[stats]
+  mean = '\textit{M}'
+  std = '\textit{SD}'
+  r = '\textit{r}'
+  p.unc = '$p_{\mathrm{unc.}}$'
+  p.corr = '\textit{p}\textsubscript{Bonf.}'
